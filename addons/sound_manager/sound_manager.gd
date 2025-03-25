@@ -68,7 +68,7 @@ func play_sound(resource: AudioStream, override_bus: String = "") -> AudioStream
 
 
 func play_sound_with_pitch(resource: AudioStream, pitch: float = 1.0, override_bus: String = "") -> AudioStreamPlayer:
-	var player = sound_effects.play(resource, override_bus)
+	var player := sound_effects.play(resource, override_bus)
 	player.pitch_scale = pitch
 	return player
 
@@ -100,7 +100,7 @@ func play_ui_sound(resource: AudioStream, override_bus: String = "") -> AudioStr
 
 
 func play_ui_sound_with_pitch(resource: AudioStream, pitch: float = 1.0, override_bus: String = "") -> AudioStreamPlayer:
-	var player = ui_sound_effects.play(resource, override_bus)
+	var player := ui_sound_effects.play(resource, override_bus)
 	player.pitch_scale = pitch
 	return player
 
